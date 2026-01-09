@@ -1,9 +1,7 @@
+import { Outlet } from "react-router";
+
 function App() {
-  return (
-    <h1 data-testid="app-root" className="text-preset-1">
-      Hello World
-    </h1>
-  );
+  return <div data-testid="app-root">{<Outlet />}</div>;
 }
 
 export default App;

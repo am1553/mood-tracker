@@ -28,7 +28,6 @@
   --gradient-light: linear-gradient(180deg, #f5f5ff 72.99%, #e0e0ff 100%);
 }
 
-/* 2) Map tokens into Tailwind theme colors */
 @theme {
   --color-neutral-0: var(--neutral-0);
   --color-neutral-200: var(--neutral-200);
@@ -54,7 +53,6 @@
     "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-/* Typography presets as utilities */
 @layer utilities {
   /* Preset 1 (Desktop) + Preset 1 Mobile default */
   .text-preset-1 {
@@ -180,5 +178,9 @@
     font-size: 12px;
     line-height: 1.1; /* 110% */
     letter-spacing: 0px;
+  }
+
+  .bg-gradient-light {
+    background-image: var(--gradient-light);
   }
 }
